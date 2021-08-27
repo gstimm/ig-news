@@ -17,7 +17,7 @@ export function SubscribeButton({ priceId }: SubscribeButtonProps) {
     }
 
     try {
-      const response = await api.post('/subscribe')
+      const response = await api.post('/subscribe');
 
       const { sessionId } = response.data;
 
@@ -31,7 +31,7 @@ export function SubscribeButton({ priceId }: SubscribeButtonProps) {
 
   return (
     <button
-      type="button"
+      type='button'
       className={styles.subscribeButton}
       onClick={handleSubscribe}
     >
